@@ -3,9 +3,10 @@ from Crypto.Util.number import long_to_bytes
 
 enc_flag = "hOtHc2dafgWuv2nHQDGsoGoF+BmDhy3N0seYgY9kVnw="
 d = 666346744999699025106284944294484928784936011745983290828277785363873598714
+#get d and decrypt the flag
 import base64
 import hashlib
-
+# this function converts from function in source code from golang to python
 def decrypt(enc, priv):
     res = bytearray()
     data = base64.b64decode(enc)
